@@ -1,0 +1,408 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root {
+    --primary: #fd0d0d;
+    --dark: #21252f;
+    --body: #888;
+    --white: #ffffff;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+    /*CAMBIE EL COLOR DE FONDO WIIIIII, og no tenia esto */
+   background-color: rgb(0, 0, 0);
+  
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4 {
+    /*color og es dark*/
+    color: var(--white);
+    font-weight: 700;
+}
+
+a {
+    /*letritas de los titulos de los cuadros */
+    color: var(--white);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+    
+    
+    
+}
+
+.logo {
+    width: 160px;
+}
+
+.navbar .nav-link {
+    /*COLOR DEFAULT DE OPCIONES DE NAVBAR ES BLANCO*/
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+.navbar .nav-link.active {
+    /*COLOR DE SELECCION DE OPCION ES LETRAS ROJAS PERO MEDIO FALLA*/
+    color: var(--primary) !important;
+}
+
+.btn {
+    /*DESDE AQUI PUEDES CAMBIAR EL COLOR DE TODOS LOS BOTONES*/
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+   
+}
+
+.hero {
+    background-image: url(../img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.hero::after {
+    /*cambiar el color de transparencia
+    img og*/
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*
+    background-color: rgba(21, 20, 51, 0.8);
+    */
+    z-index: -1;
+    background-color: rgba(51, 20, 20, 0.8);
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /*SIN EL BACKGROUND COLOR ANTES*/
+    background-color: black;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    /*background color de los cards og blanco */
+    background-color: var(--dark);
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    /*ESTOS SON LOS ICON BOX REDONDOS, 
+    SE LE PUEDE CAMBIAR EL COLOR*/
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+    
+}
+
+
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  /*COLOR ORIGNINAL CUADROS DE SERVICIOS ES DARK*/
+  
+}
+
+.service::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+    /*COLOR ORIGNINAL CUADROS DE SERVICIOS 
+    CUANDO SE LE PASA POR ENCIMA ES ROJO*/
+}
+
+
+.service:hover .iconbox {
+    background-color: var(--white);
+    color: var(--primary);
+    /*COLOR ORIGNINAL DE ICONOS REDONDOS DE CUADROS DE SERVICIOS 
+    CUANDO SE LE PASA POR ENCIMA ES BLANCO*/
+  
+    
+}
+
+.service:hover h5,
+.service:hover p {
+    color: var(--white);;
+/*COLOR DE LAS LETRAS DE LOS CUADROS DE SERVICIO*/
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+    /*COLOR ORIGNINAL DE ICONOS REDONDOS DE CUADROS DE SERVICIOS 
+    CUANDO SE LE PASA POR ENCIMA ES BLANCO*/
+   
+}
+
+.col-img {
+    background-image: url(../img/cover2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.project .overlay {
+    /*CUANDO PASAS POR ENCIMA DE RECENT WORK*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+    /*COLOR OG ES DARK Y SE VE CON 
+    TRANSPARENCIA, PERO SI SE PONE UN COLOR 
+    ESTE SE VE SOLIDO*/
+    
+}
+
+.project img {
+    transition: all 0.4s ease;   
+}
+
+.project:hover .overlay{
+    opacity: 1;
+   
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+
+.pricing i {
+    font-size: 20px;
+    color: var(--primary);
+    /*ICONOS CHIQUITOS DE PRECIOS*/
+   
+}
+
+.pricing ul li {
+    margin-top: 8px;
+    /*LETRAS DESCRIPCION TEXTO PRECIOS*/
+   
+}
+
+.team-member img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    
+}
+.social-icons a {
+    /*ICONOS DE REDES SOCIALES DE LOS INVOLUCRADOS*/
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+    
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primarys);
+    /*CUANDO LE PASAS ENCIMA*/
+}
+
+
+form input.form-control {
+    height: 56px;
+    /*CAJITAS DE FORM*/
+    
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.02);
+}
+
+
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+    /*PARTE FINAL QUE TIENE INFORMACION ES DARK*/
+}
+
+.footer-top a {
+    color: var(--body);
+    
+}
+
+.footer-top a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    background-color: #242933;
+}
+/*LOADER NEW*/
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    
+
+}
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+		spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+	;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+
+<head><!----jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Hello, Dean</title>
+     <!-- codigo de esa vaina favicon
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+ -->
+ <link rel="icon" type="image/png"  href="img/favicons/favicon-16x16.png">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+<!-----LOADER-->
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----aaaaaaaaaaaaaa end navbar-->
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+       });
+    </script>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/logo-dark.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">DEAN!!!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-lg-3">Join Us</button>
+            </div>
+        </div>
+    </nav><!-- //NAVBAR -->
+
+    <!-- HERO -->
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h1 class="display-4 text-white">Super Mega Hell productions</h1>
+                    <p class="text-white my-3">*Record scratch, freeze frame* You're probably wondering
+                        How we ended uo here. Well, it's all the gay angel's fault! I was sleeping at peace 
+                    but nooooo, not anymore</p>
+                     <!-- // btn-primary bootstrap min -->  
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn me-2 btn-primary">oooh u wanna click me so bad</a>
+                    <a href="#portfolio" class="btn btn-outline-light">My Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- //HERO -->
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <!-- text primary en css bootstrap cambia de azul a rojo-->
+                    <h4 class="text-primary">WELCOME TO SUPERHELL!</h6>
+                    <h1>Our Services</h1>
+                    <p>Welcome to the end of everything, the tumblr con's ballpit, 
+                        the best place worse than death itself, it is SuperHell!  
+                        The only place where you would actually pray to get killed, 
+                        cause here suffering is just the beginning.  
+                        Here, you will be forced to be MY ENTERTAINMENT! We have  
+                        a lot of plans for this season! Prepare, relax and enjoy 
+                        the ride! Att: The Empty (trademark still in process)</p>
+                        <BR>
+                        <h4 class="text-primary">REASONS FOR ENDING UP HERE:</h4>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect bounceInUp">
+                        <div class="iconbox">
+                            <i class='bx bxs-check-shield'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Fruity behaviour</h5>
+                        <p>I know what you are </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-comment-detail'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Kissing the homies goodnight</h5>
+                        <p>Girls can kiss other girls but when you kiss the
+                            homies goodnight society calls you GAY </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-cog'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Dont know um</h5>
+                        <p>anything xd </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-heart'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Spanish love confessions</h5>
+                        <p>Spanish is a romance language, but I assure you
+                            it will give you a VIP to this place </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-rocket'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Asking questions</h5>
+                        <p>Are you going to ask what happenned to Dean, dont you?
+                            bohoo you cant </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-doughnut-chart'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">[GUNSHOT][REDACTED][OMITTED] Policy</h5>
+                        <p>Tag yourself </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- SERVICES -->
+
+    <!-- FEATURES -->
+    <section class="row w-100 py-0 bg-dark" id="features">
+         <!-- og es bg=bg-light, pero si le quitas, te deja el color 
+        que escogiste en estilos, recuerda el cyan-->
+        <div class="col-lg-6 col-img"></div>
+        <div class="col-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h4 class="text-primary">Coming Soon</h6>
+                        <h1>Best solution for you</h1>
+                        <p> Can't tell you much about them yet, I'm still figuring it out
+                            (aren't we all) I want to rule this place different than Hell,
+                            different than Heaven, just forget about dumbass Chuck, I'm 
+                            so much better, older and wiser than him. He wishes he was me
+                            (yeah, lower case for him, fuck you little brother)</p>
+
+                        <div class="feature d-flex mt-5">
+                            <div class="iconbox me-3">
+                                <i class='bx bxs-comment-edit'></i>
+                            </div>
+                            <div>
+                                <h5>LIT</h5>
+                                <p>Yes, this will get LIT, physically and emotionally speaking 
+                                    of course </p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox me-3">
+                                <i class='bx bxs-user-circle'></i>
+                            </div>
+                            <div>
+                                <h5>Diversity Win</h5>
+                                <p>I'll probably give you updates that i get by 
+                                    hearing the gossip around the multiverse, like for example:
+                                    The evil Hoth Moth Gabriel Agreste showed a little 
+                                    bit of queer coding in the last season of MLB </p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox me-3">
+                                <i class='bx bxs-download'></i>
+                            </div>
+                            <div>
+                                <h5>Funky thing actually</h5>
+                                <p> This is going to be so fun, just wait and see ;) </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- FEATURES -->
+
+    <!-- PROJECTS -->
+    <section id="portfolio">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">PROJECTS</h6>
+                    <h1>THE EVIDENCE</h1>
+                    <p>12 YEAR-OLD-SLOW-BURN</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="img/pro1.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Free to be you and me 5x03</h4>
+                                <h6 class="text-white">Bert and Ernie are gay</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="img/pro2.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">In the beginning 4x03</h4>
+                                <h6 class="text-white">Don't sit to close, it looks too gay</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="img/pro3.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project Title</h4>
+                                <h6 class="text-white">Website Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="img/pro4.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project Title</h4>
+                                <h6 class="text-white">Website Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="img/pro5.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project Title</h4>
+                                <h6 class="text-white">Website Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="img/pro6.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project Title</h4>
+                                <h6 class="text-white">Website Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- PROJECTS -->
+
+    <!-- PRICING -->
+    <section id="pricing" class="bg-DARK">
+          <!-- og es bg=bg-light, pero si le quitas, te deja el color 
+        que escogiste en estilos, recuerda el cyan-->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">DEAN!!!</h6>
+                    <h1>Maybe there is a way to get us out of this</h1>
+                    <p>I can feel you, I know you are close, but this entity won't let
+                        me reach you. As much as it is presented as an unstoppable force
+                        I have found a way to make ot work! I hope you can hear me Dean...
+                        I hope you can...
+                        See you soon, Dean</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="pricing card-effect text-center">
+                        <h6>STARTER</h6>
+                        <h1>$99</h1>
+                        <hr>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class='bx bxs-check-circle'></i>
+                                Premium support</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                30+ Webmaster Tools</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                Drag & Drop Builder</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                eCommerce Store</li>
+                            <li><i class='bx bxs-check-circle'></i>Wordpress plugins</li>
+                        </ul>
+                        <a href='javascript:openUrl()' class="btn me-2 btn-primary">Get the fics!</a>
+                        <!--SCRIPT PARA ENVIAR A DIFERENTES FICS----->
+                        <script>
+                            var sites=['http://www.google.com/',
+                            'http://www.msn.com/',
+                            'http://www.yahoo.com/'
+                            ];
+                            
+                            function openUrl(){
+                                
+                                var i = Math.round(Math.random()*(sites.length-1));
+                                window.location.href=sites[i];
+                                return false;
+                            }
+                            </script>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="pricing card-effect text-center">
+                        <h6>STARTER</h6>
+                        <h1>$199</h1>
+                        <hr>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class='bx bxs-check-circle'></i>
+                                Premium support</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                30+ Webmaster Tools</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                Drag & Drop Builder</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                eCommerce Store</li>
+                            <li><i class='bx bxs-check-circle'></i>Wordpress plugins</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="pricing card-effect text-center">
+                        <h6>STARTER</h6>
+                        <h1>$299</h1>
+                        <hr>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class='bx bxs-check-circle'></i>
+                                Premium support</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                30+ Webmaster Tools</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                Drag & Drop Builder</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                eCommerce Store</li>
+                            <li><i class='bx bxs-check-circle'></i>Wordpress plugins</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="pricing card-effect text-center">
+                        <h6>STARTER</h6>
+                        <h1>$399</h1>
+                        <hr>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class='bx bxs-check-circle'></i>
+                                Premium support</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                30+ Webmaster Tools</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                Drag & Drop Builder</li>
+                            <li><i class='bx bxs-check-circle'></i>
+                                eCommerce Store</li>
+                            <li><i class='bx bxs-check-circle'></i>Wordpress plugins</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- PRICING -->
+
+    <!-- TEAM -->
+    <section id="team">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">TEAM</h6>
+                    <h1>Meet Our Crew Members</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+                        in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+                </div>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="img/team1.jpg" alt="">
+                        <h5 class="mb-0 mt-4">Minimalist.Multifandom</h5>
+                        <p>The queer who coded this</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="img/team2.jpg" alt="">
+                        <h5 class="mb-0 mt-4">the.rainbow._.meme</h5>
+                        <p>Consulting designer and storyteller</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="img/team3.jpg" alt="">
+                        <h5 class="mb-0 mt-4">Sharbat Khan</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="img/team4.jpg" alt="">
+                        <h5 class="mb-0 mt-4">Sharbat Khan</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- TEAM -->
+
+    <!-- BLOG -->
+    <section id="blog" class="bg-DARK">
+         <!-- og es bg=bg-light, pero si le quitas, te deja el color 
+        que escogiste en estilos, recuerda el cyan-->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">BLOG</h6>
+                    <h1>Latest News From The Blog</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+                        in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="blog-post card-effect">
+                        <img src="img/blog1.jpg" alt="">
+                        <h5 class="mt-4"><a href="#">harum vitae debitis sapiente praesentium aperiam au</a></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-post card-effect">
+                        <img src="img/blog2.jpg" alt="">
+                        <h5 class="mt-4"><a href="#">harum vitae debitis sapiente praesentium aperiam au</a></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-post card-effect">
+                        <img src="img/blog3.jpg" alt="">
+                        <h5 class="mt-4"><a href="#">harum vitae debitis sapiente praesentium aperiam au</a></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- BLOG -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">CONTACT</h6>
+                    <h1>Get In Touch</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+                        in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/xrgdkkvl"  method="POST" class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" name="nombre" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" name="mail" class="form-control" placeholder="Enter E-mail">
+                </div>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="Enter Subject">
+                </div>
+                <div class="col-md-10">
+                    <textarea name="msg" id="" cols="30" rows="5" class="form-control"
+                        placeholder="Enter Message"></textarea>
+                </div>
+                <div class="col-md-10 d-grid">
+                    <button type="submit" class="btn btn-primary">Contact</button>
+                    <a href="" class="btn me-2 btn-primary">fuck</a>
+                    <p>ojala funcione este github directo</p>
+                </div>
+            </form>
+
+        </div>
+    </section><!-- CONTACT -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <img class="logo" src="img/logo-white.svg" alt="">
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white">Brand</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white">More</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">Shipment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>Address: 2715 Ash Dr. San Jose, South Dakota 83475</li>
+                            <li>Email: jackson.graham@example.com</li>
+                            <li>Phone: (603) 555-0123</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2020 copyright all right reserved | Designed with <i
+                            class="bx bx-heart text-danger"></i> by<a
+                                href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ"
+                                class="text-white">SA7MAN</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
